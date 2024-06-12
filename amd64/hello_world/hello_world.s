@@ -41,9 +41,8 @@ main:
 	call print
 
 	/* exit(0) */
-	mov $1, %rax	/* FreeBSD exit syscall */
 	xor %rdi, %rdi
-	syscall
+	call pexit
 
 .section	.rodata
 message:

@@ -132,7 +132,6 @@
 #define sys_sigaltstack 131
 #define sys_utime 132
 #define sys_mknod 133
-#define  134
 #define sys_personality 135
 #define sys_ustat 136
 #define sys_statfs 137
@@ -172,18 +171,9 @@
 #define sys_setdomainname 171
 #define sys_iopl 172
 #define sys_ioperm 173
-#define  174
 #define sys_init_module 175
 #define sys_delete_module 176
-#define  177
-#define  178
 #define sys_quotactl 179
-#define  180
-#define  181
-#define  182
-#define  183
-#define  184
-#define  185
 #define sys_gettid 186
 #define sys_readahead 187
 #define sys_setxattr 188
@@ -203,17 +193,12 @@
 #define sys_futex 202
 #define sys_sched_setaffinity 203
 #define sys_sched_getaffinity 204
-#define  205
 #define sys_io_setup 206
 #define sys_io_destroy 207
 #define sys_io_getevents 208
 #define sys_io_submit 209
 #define sys_io_cancel 210
-#define  211
-#define  212
 #define sys_epoll_create 213
-#define  214
-#define  215
 #define sys_remap_file_pages 216
 #define sys_getdents64 217
 #define sys_set_tid_address 218
@@ -234,7 +219,6 @@
 #define sys_epoll_ctl 233
 #define sys_tgkill 234
 #define sys_utimes 235
-#define  236
 #define sys_mbind 237
 #define sys_set_mempolicy 238
 #define sys_get_mempolicy 239
@@ -375,8 +359,6 @@
 #define compat_sys_rt_sigaction 512
 #define compat_sys_x32_rt_sigreturn 513
 #define compat_sys_ioctl 514
-#define sys_readv 515
-#define sys_writev 516
 #define compat_sys_recvfrom 517
 #define compat_sys_sendmsg 518
 #define compat_sys_recvmsg 519
@@ -392,17 +374,11 @@
 #define compat_sys_waitid 529
 #define compat_sys_set_robust_list 530
 #define compat_sys_get_robust_list 531
-#define sys_vmsplice 532
-#define sys_move_pages 533
 #define compat_sys_preadv64 534
 #define compat_sys_pwritev64 535
 #define compat_sys_rt_tgsigqueueinfo 536
 #define compat_sys_recvmmsg_time64 537
 #define compat_sys_sendmmsg 538
-#define sys_process_vm_readv 539
-#define sys_process_vm_writev 540
-#define sys_setsockopt 541
-#define sys_getsockopt 542
 #define compat_sys_io_setup 543
 #define compat_sys_io_submit 544
 #define compat_sys_execveat 545

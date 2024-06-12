@@ -1,8 +1,11 @@
-all: ../string.s terminal.s hello_world.s
-	$(CC) ../string.s terminal.s hello_world.s -o hello_world
+all: ../string.s terminal.s jump.s hello_world.s
+	$(CC) ../string.s terminal.s jump.s hello_world.s -o hello_world
+
+jump.s:
+	$(CC) -E -P -xc -DOS_NAME=$$(uname -s) ../jump.hs -o $@
 
 terminal.s:
-	gcc -E -P -xc ../terminal.hs -o $@
+	$(CC) -E -P -xc -DOS_NAME=$$(uname -s) ../terminal.hs -o $@
 
 clean:
-	rm terminal.s hello_world
+	rm -f terminal.s hello_world jump.s
