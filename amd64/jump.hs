@@ -10,5 +10,4 @@ rdi - int - return value
 pexit:
 	mov DOLLAR()SYSCALL(exit), %rax
 	syscall
-	xor %rax, %rax
 	ret 
