@@ -7,6 +7,7 @@
 #define DOLLAR() $
 
 #define FreeBSD 0
-#define Linux 1
-#define Darwin 2
-#define SunOS 3
+#define GNU_Linux 1
+#define Msys 2
+#define Darwin 3
+#define SunOS 4
