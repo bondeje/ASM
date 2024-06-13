@@ -1,4 +1,4 @@
-#include "../syscall_table.h"
+#include "syscall_table.h"
 .globl pexit
 .type pexit, %function
 
